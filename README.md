@@ -3,13 +3,13 @@
 ## Installation
 
 ```bash
-npm install verifiedsms
+npm install @verifiedsms/js
 ```
 
 ## Quick Start
 
 ```javascript
-import { VerifiedSMS } from 'verifiedsms';
+import { VerifiedSMS } from '@verifiedsms/js';
 
 const client = new VerifiedSMS('YOUR_API_KEY');
 
@@ -29,7 +29,7 @@ console.log(balance.balance); // "100.00"
 ### CommonJS
 
 ```javascript
-const { VerifiedSMS } = require('verifiedsms');
+const { VerifiedSMS } = require('@verifiedsms/js');
 ```
 
 ## Configuration
@@ -142,7 +142,7 @@ import {
     RateLimitError,
     GatewayError,
     ServerError,
-} from 'verifiedsms';
+} from '@verifiedsms/js';
 
 try {
     await client.send('98XXXXXXXX', 'Hello');
@@ -168,7 +168,7 @@ try {
 
 ```javascript
 import express from 'express';
-import { VerifiedSMS } from 'verifiedsms';
+import { VerifiedSMS } from '@verifiedsms/js';
 
 const app = express();
 app.use(express.raw({ type: 'application/json' }));
@@ -196,7 +196,7 @@ app.listen(3000);
 
 ```javascript
 import express from 'express';
-import { VerifiedSMS } from 'verifiedsms';
+import { VerifiedSMS } from '@verifiedsms/js';
 
 const app = express();
 app.use(express.json());
@@ -217,7 +217,7 @@ app.post('/send-sms', async (req, res) => {
 
 ```javascript
 // pages/api/send.js (or app/api/send/route.js)
-import { VerifiedSMS } from 'verifiedsms';
+import { VerifiedSMS } from '@verifiedsms/js';
 
 const client = new VerifiedSMS(process.env.VERIFIEDSMS_API_KEY);
 
@@ -240,7 +240,7 @@ export default async function handler(req, res) {
 
 ```javascript
 import Fastify from 'fastify';
-import { VerifiedSMS } from 'verifiedsms';
+import { VerifiedSMS } from '@verifiedsms/js';
 
 const app = Fastify();
 const client = new VerifiedSMS('YOUR_API_KEY');
@@ -258,7 +258,7 @@ app.listen({ port: 3000 });
 
 ```html
 <script type="module">
-    import { VerifiedSMS } from 'https://cdn.jsdelivr.net/npm/verifiedsms/dist/verifiedsms.min.js';
+    import { VerifiedSMS } from 'https://cdn.jsdelivr.net/npm/@verifiedsms/js/dist/verifiedsms.min.js';
 
     const client = new VerifiedSMS('YOUR_API_KEY');
 
