@@ -2,8 +2,25 @@
     "name": "@verifiedsms/js",
     "version": "2.0.0",
     "description": "JavaScript SDK for VerifiedSMS API v2 — SMS gateway for Nepal",
-    "main": "src/index.js",
-    "types": "src/index.d.ts",
+    "keywords": [
+        "sms",
+        "nepal",
+        "gateway",
+        "verifiedsms",
+        "ntc",
+        "ncell"
+    ],
+    "homepage": "https://github.com/VerifiedSMS/sdk-nodejs#readme",
+    "bugs": {
+        "url": "https://github.com/VerifiedSMS/sdk-nodejs/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/VerifiedSMS/sdk-nodejs.git"
+    },
+    "license": "MIT",
+    "author": "VerifiedSMS <support@verifiedsms.com>",
+    "type": "commonjs",
     "exports": {
         ".": {
             "require": "./src/index.js",
@@ -11,23 +28,20 @@
             "types": "./src/index.d.ts"
         }
     },
+    "main": "src/index.js",
+    "types": "src/index.d.ts",
+    "directories": {
+        "example": "examples"
+    },
+    "files": [
+        "src/",
+        "dist/"
+    ],
     "scripts": {
         "test": "node --test src/**/*.test.js"
     },
-    "keywords": ["sms", "nepal", "gateway", "verifiedsms", "ntc", "ncell"],
-    "author": "VerifiedSMS <support@verifiedsms.com>",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/VerifiedSMS/sdk-nodejs"
-    },
-    "homepage": "https://github.com/VerifiedSMS/sdk-nodejs#readme",
-    "bugs": {
-        "url": "https://github.com/VerifiedSMS/sdk-nodejs/issues"
-    },
+    "devDependencies": {},
     "engines": {
         "node": ">=18.0.0"
-    },
-    "files": ["src/", "dist/"],
-    "devDependencies": {}
+    }
 }
